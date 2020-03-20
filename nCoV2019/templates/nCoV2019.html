@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>东湖网信办</title>
+    <!-- Bootstrap -->
+
+
+    <link rel="stylesheet" href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/static/nCoV2019/style.css"/>
+    <script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">东湖网信办</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">项目1</a></li>
+                <li><a href="#">项目2</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        项目3 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">项目2</a></li>
+                        <li><a href="#">项目3</a></li>
+                        <li><a href="#">项目4</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">项目5</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">项目6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div id="shouyeshuju">
+
+
+                <div class="yemei">
+                    <p class="diyihang"><span class="jzr">较昨日</span>
+                        <span class="jzr2">+</span>
+                        <span class="zj"></span></p>
+                    <p class="renshu"></p>
+                    <p class="miaoshu">确诊</p>
+                </div>
+                <div class="yemei">
+                    <p class="diyihang"><span class="jzr">较昨日</span>
+                        <span class="jzr2">+</span>
+                        <span class="zj"></span></p>
+                    <p class="renshu"></p>
+                    <p class="miaoshu">疑似</p>
+                </div>
+                <div class="yemei">
+                    <p class="diyihang"><span class="jzr">较昨日</span>
+                        <span class="jzr2"></span>
+                        <span class="zj"></span></p>
+                    <p class="renshu"></p>
+                    <p class="miaoshu">重症</p>
+                </div>
+                <div class="yemei">
+                    <p class="diyihang"><span class="jzr">较昨日</span>
+                        <span class="jzr2">+</span>
+                        <span class="zj"></span></p>
+                    <p class="renshu"></p>
+                    <p class="miaoshu">死亡</p>
+                </div>
+                <div class="yemei">
+                    <p class="diyihang"><span class="jzr">较昨日</span>
+                        <span class="jzr2">+</span>
+                        <span class="zj"></span></p>
+                    <p class="renshu"></p>
+                    <p class="miaoshu">治愈</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <p>实时疫情 <span id="time"></span></p>
+            <div id="container1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p>比例</p>
+            <div id="container2"></div>
+        </div>
+    </div>
+
+</div>
+<p>分析数据</p>
+<div id="fenxi2"></div>
+{#<p>分析数据</p>#}
+{#<div id="myCarousel" class="carousel slide">#}
+{#    <!-- 轮播（Carousel）指标 -->#}
+{#    <ol class="carousel-indicators">#}
+{#        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>#}
+{#        <li data-target="#myCarousel" data-slide-to="1"></li>#}
+{#        <li data-target="#myCarousel" data-slide-to="2"></li>#}
+{#        <li data-target="#myCarousel" data-slide-to="3"></li>#}
+{#        <li data-target="#myCarousel" data-slide-to="4"></li>#}
+{#        <li data-target="#myCarousel" data-slide-to="5"></li>#}
+{#    </ol>#}
+{#    <!-- 轮播（Carousel）项目 -->#}
+{#    <div class="carousel-inner">#}
+{#        <div class="item active">#}
+{#            <img class="lunbotu" src="">#}
+{#            <div class="carousel-caption">分析结论1</div>#}
+{#        </div>#}
+{#        <div class="item">#}
+{#            <img class="lunbotu" src="">#}
+{#            <div class="carousel-caption">分析结论2</div>#}
+{#        </div>#}
+{#        <div class="item">#}
+{#            <img class="lunbotu" src="">#}
+{#            <div class="carousel-caption">分析结论3</div>#}
+{#        </div>#}
+{#        <div class="item">#}
+{#            <img class="lunbotu" src="">#}
+{#            <div class="carousel-caption">分析结论4</div>#}
+{#        </div>#}
+{#        <div class="item">#}
+{#            <img class="lunbotu" src="">#}
+{#            <div class="carousel-caption">分析结论5</div>#}
+{#        </div>#}
+{#        <div class="item">#}
+{#            <img class="lunbotu" src="">#}
+{#            <div class="carousel-caption">分析结论6</div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <!-- 轮播（Carousel）导航 -->#}
+{#    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">#}
+{#        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>#}
+{#        <span class="sr-only">Previous</span>#}
+{#    </a>#}
+{#    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">#}
+{#        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>#}
+{#        <span class="sr-only">Next</span>#}
+{#    </a>#}
+{#</div>#}
+{##}
+{##}
+<div class="ciyun" >
+
+<div> <img class="" src="/static/nCoV2019/ciyun.png"></div>
+
+    <br>
+
+<p>Copyright © 2010-2020 Powered by 郝玉保 技术支持:胡文涛 All Rights Reserved.</p>
+
+
+
+
+</div>
+    <div class="col-sm-12">
+{#        <p>实时新闻</p>#}
+        <div id="news">
+
+            {% for item in List3 %}
+
+                <div id="detail">
+                    <p>{{ item.title }}</p>
+                    <div>{{ item.summary }}</div>
+
+
+                    <p><span>新闻来源</span>
+                        <span><a href="{{ item.sourceUrl }}">
+                            {{ item.sourceUrl }}</a></span>
+                        <span>{{ item.provinceName }}</span>
+                        <span class="time" data-time="{{ item.pubDate }}">
+
+                    </span>
+
+                    </p>
+                </div>
+
+
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=wBs2A38Wn564tYStqM5p01cyfcPOrHON">
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+<script type="text/javascript" src="/static/nCoV2019/fenxi2.js"></script>
+<script>
+    var None='';
+    var List = {{ onedata_recviced|safe }};
+    var List2 = {{ twodata_recviced|safe }};
+    var List3 = {{ threedata_recviced|safe }};
+
+
+    var obj1 = List;
+    var obj2temp = List2['results'];
+    var quanguo = obj2temp[0];
+    console.log(obj1)
+
+    var singledata = [];
+    for (var i in obj1) {
+        if (obj1[i].countryName == "中国") {
+            singledata.push({
+                name: obj1[i].provinceShortName,
+                value: [{
+                    name: "确诊",
+                    value: obj1[i].currentConfirmedCount
+                },
+                    {
+                        name: "治愈",
+                        value: obj1[i].curedCount
+                    }, {
+                        name: "死亡",
+                        value: obj1[i].deadCount
+                    }]
+            });
+        }
+
+    }
+
+
+    $(".time").each(function () {
+
+        var dd = $(this).data("time")
+        var datetime = new Date(parseInt(dd));
+
+        var dt2 = datetime.toLocaleDateString() + " " + datetime.toTimeString().substr(0, 8);
+        $(this).html(dt2)
+
+
+    })
+    ;
+
+
+    setInterval(function () {
+        document.getElementById("time").innerHTML = new Date().toLocaleString();
+    }, 1000)
+
+</script>
+<script type="text/javascript" src="/static/nCoV2019/main.js"></script>
+
+
+</html>
+
+
